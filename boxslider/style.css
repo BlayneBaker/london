@@ -1,0 +1,30 @@
+.slider{
+  width: 60%;
+}
+
+ul.bxslider {
+  left: -40px;
+  top: -15px;
+
+}
+
+img{
+  width: 100%;
+}
+
+.panel {
+  display:inline-block;
+  width: 33%;
+}
+
+@media screen and (min-width:478px) {
+  .panel{
+    width: 49%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .panel{
+    width:33%;
+  }
+}

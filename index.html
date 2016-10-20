@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Media Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Domine|Kaushan+Script|Lora" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bxslider/bxslider.css" />
+    <link rel="stylesheet"  type= "text/css" href="style.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Loads jQuery library via CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- Calls bxSlider Javascript file -->
+    <script src="bxslider/bxslider.min.js"></script>
+    <!-- Calls bxSlider Function -->
+    <script src="bxslider/slider.js"></script>
+  </head>
+  <body>
+      <main>
+			     <nav id="main-navigation" class="navigation">
+				         <a href="#"><span class="x-mark">&#10006;</span></a>
+				         <h3>Navigation</h3>
+				         <ul class="">
+					              <li><a href="#">Gallery One</a></li>
+					              <li><a href="#">Gallery Two</a></li>
+					              <li><a href="#">Gallery Three</a></li>
+				          </ul>
+			      </nav>
+      <header class="icon-wrap">
+				    <a href="#main-navigation"><span class="hamburger">&#9776;</span></a>
+			</header>
+          <section class="slider">
+            <div class="slides-container">
+              <ul class="bxslider">
+                  <li><img src="pix/glass.jpg" title="Stained Glass window from York Minister Cathedral" alt="Stained Glass window from York Minister Cathedral" /></li>
+                  <li><img src="pix/market.jpg" title="York Christmas Market" alt="York Christmas Market"/></li>
+                  <li><img src="pix/yorktower.jpg" title="Aerial view from the top of York Minister Cathedral" alt="Aerial view from the top of York Minister Cathedral" /></li>
+                  <li><img src="pix/cross.jpg" title="King's Cross" alt="King's Cross" /></li>
+              </ul>
+        </div>
+        <div class="teaser">
+            <h1> London Christmas 2016</h1>
+            <p> Photos from my first trip abroad to London during Christmas of 2016.    </p>
+            <p style="text-align: center; padding-top: 16px;">
+						        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;
+						        <a href="#"><i class="fa fa-snapchat" aria-hidden="true"></i></a>&nbsp;
+						        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;
+						        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;
+						        <a href="#"><i class="fa fa-vine" aria-hidden="true"></i></a>
+					  </p>
+        </div>
+    </section>
+    <section class="grid">
+        <div class="panel">
+            <img src="pix/yorkwall.jpg" alt="York Wall" onclick="onClick(this)" />
+            <p> Walking along the wall that surrounds the city of York.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/yorkstreet.jpg" alt="York Street" onclick="onClick(this)" />
+          <p>Strolling down York's famous street.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/yorkminister.jpg" alt="York Minister" onclick="onClick(this)" />
+          <p>Exterior view of York Minister Cathedral.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/st.maryabbey.jpg" alt="St.Mary's Abbey" onclick="onClick(this)" />
+          <p>The ruins of St. Mary's Abbey in York.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/yorkmarket.jpg" alt="York Christmas Market" onclick="onClick(this)" />
+          <p>York Christmas Market booth.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/redbooth.jpg" alt="Iconic British Red Phone Booth" onclick="onClick(this)" />
+          <p>Iconic British red phone booth.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/coventgardens.jpg" alt="Covent Gardens" onclick="onClick(this)" />
+          <p>Walking through Covent Gardens at night.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/bigben.jpg" alt="Big Ben" onclick="onClick(this)" />
+          <p>View of Big Ben from the West Minister tube station.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/londoneye.jpg" alt="London Eye" onclick="onClick(this)" />
+          <p>The London Eye lit up at night.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/lincolnstreet.jpg" alt="Lincoln Street" onclick="onClick(this)" />
+          <p>A Lincoln street with the cathedral in the background.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/viewfromeye.jpg" alt="View from the London Eye" onclick="onClick(this)" />
+          <p>Aerial view of Big Ben and London from The Eye.</p>
+      </div>
+      <div class="panel">
+          <img src="pix/lincolncathedral.jpg" alt="Lincoln Cathedral" onclick="onClick(this)" />
+          <p>Exterior view of Lincoln Cathedral.</p>
+      </div>
+    </section>
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+			  <span class="closebtn container">&times;</span>
+			  <div class="modal-content animate-zoom">
+			    <img id="img01" style="width:100%">
+			  </div>
+			</div>
+	</main>
+	<footer>
+			<p>&copy; Blayne A. Baker, 2016</p>
+	</footer>
+	<script>
+			function onClick(element) {
+			  document.getElementById("img01").src = element.src;
+			  document.getElementById("modal01").style.display = "block";
+			}
+	</script>
+  </body>
+  </html>
